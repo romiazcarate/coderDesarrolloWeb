@@ -1,0 +1,310 @@
+*{
+    padding:0%;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+}
+
+h1{
+    font-family: "Playfair Display", serif;
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 40px; 
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6376a3;
+    padding: 5px;
+}
+
+.logo {
+    width:13.5rem; 
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display:flex;
+    margin: 0;
+    gap:15px;
+
+}
+
+nav ul li a{
+    font-family: "Roboto Slab", serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px; 
+}
+
+main {
+    background-color: #122350;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*casos*/
+.video {
+    display: grid;
+    padding: 20px;
+    grid-template-columns:repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.video iframe {
+    border: 5px solid #E9A051;
+    
+}
+
+/* Especialidades Areas */
+section {
+    background-color: #122350;
+    padding: 20px;
+    font-family: "Roboto Slab", serif;
+    display:grid;
+}
+
+.especialidadesAreas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid rgba(128, 128, 128, 0.5);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 80%;
+    color: white;
+    text-align: left;
+    background-color: #122350;
+}
+
+.especialidadesAreas ul {
+    padding-left: 20px;
+    list-style-position: inside;
+    width: 100%;
+}
+
+.especialidadesImage{
+    max-width: 70px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto 20px auto; 
+}
+
+/* Footer */
+
+footer {
+    background-color: #6376a3;
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.footer__left{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.footer__right{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.redes a img{
+    width: 35px; 
+    height: 35px; 
+    margin: 12px;
+
+}
+
+.footer__bottom{
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .video {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__bottom {
+        grid-column: 1;
+    }
+}
+
+
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contenido img {
+    max-width: 45%;
+    height: auto;
+}
+
+.contenido div {
+    max-width: 50%;
+    text-align: left;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+.texto-principal {
+    max-width: 50%;
+    text-align: left;
+    padding: 20px;
+    color: #FFFFFF;
+    font-family: "Playfair Display", serif;
+}
+
+.mainQuienesSomos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mainQuienesSomos img{
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+    padding: 3%;
+}
+
+
+.textoQuienesSomos p{
+    color: #FFFFFF;
+    max-width: 100%;
+    text-align:justify
+    
+}
+
+.textoQuienesSomos h2{
+    color:#E9A051;
+    text-align: center;
+}
+
+.equipo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Contacto */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    padding: 10px 35px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contacto{
+    background-color: #FFFFFF;
+    font-family: "Roboto Slab", serif;
+}
+.contacto h2{
+    text-align: center;
+    color: #E9A051;
+    font-family: "Playfair Display", serif;
+}
+
+.contacto p{
+    text-align:center;
+}
+
+
+/* Carousel */
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px; /* Ajusta según sea necesario */
+}
+
+.carousel-item .row {
+    width: 150%;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    text-align: center;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.5);     
+    padding: 20px;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.carousel-caption h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 15px;
+}
+
