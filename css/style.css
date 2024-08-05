@@ -14,33 +14,50 @@ h1{
     margin: 0;
     font-size: 40px; 
 }
+/* header*/
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #6376a3;
-    padding: 5px;
+    padding: 15px;
 }
 
 .logo {
-    width:13.5rem; 
-    height: auto;
+    max-width: 150px;
 }
 
-nav ul {
+.header__nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.header__nav ul {
     list-style: none;
-    display:flex;
     margin: 0;
-    gap:15px;
-
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
-nav ul li a{
-    font-family: "Roboto Slab", serif;
+.header__nav li {
+    margin-left: 20px;
+}
+
+.header__nav a {
     text-decoration: none;
-    color: #FFFFFF;
-    font-size: 20px; 
+    color: #E9A051; 
+    font-family: "Roboto Slab", serif;
+}
+
+.header__nav a:hover {
+    color: #FFFFFF; /* Color al pasar el cursor */
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #FFFFFF; 
 }
 
 main {
