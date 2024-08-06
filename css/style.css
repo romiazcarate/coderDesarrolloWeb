@@ -203,7 +203,12 @@ footer {
     /* .header__nav{
         display: none;
     } */
-    
+    .video iframe{
+        width: 100%;
+    }
+    .footer__right iframe{
+        width:100%;
+    }
     
 }
 @media (max-width: 576px) {
