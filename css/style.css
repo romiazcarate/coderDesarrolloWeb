@@ -173,6 +173,7 @@ footer {
     nav ul {
         flex-direction: column;
         gap: 10px;
+        align-items: start; /* Alineamos los items a la izuiqeda */
     }
 
     .video {
@@ -185,6 +186,29 @@ footer {
 
     .footer__bottom {
         grid-column: 1;
+    }
+    /* Le añadimos un div al logo para poder centrarlo cuando esta responsive */
+    .container-logo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Alineamos el header en colum y ajustamos los item a la izuiqeda */
+    .header{
+        flex-direction: column;
+        align-items: start;
+    }
+    /* .header__nav{
+        display: none;
+    } */
+    
+    
+}
+@media (max-width: 576px) {
+   .contenido{
+    flex-direction: column;
     }
 }
 
