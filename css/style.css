@@ -208,7 +208,7 @@ footer {
     }
 
      /* Carousel mobile */
-    .carousel-caption {
+    .carousel-caption p {
         display: none;
     }
 }
