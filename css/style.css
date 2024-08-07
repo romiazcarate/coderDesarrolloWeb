@@ -92,8 +92,8 @@ section {
 
 .especialidadesContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
 .especialidadPenal {
@@ -210,6 +210,17 @@ footer {
      /* Carousel mobile */
     .carousel-caption p {
         display: none;
+    }
+
+    /* Ajustes para especialidadesContainer */
+    .especialidadesContainer {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .especialidadesAreas {
+        width: 100%; /* Asegura que cada especialidad ocupe todo el ancho disponible */
+        margin-bottom: 20px; /* Espaciado entre los recuadros */
     }
 }
 
