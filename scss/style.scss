@@ -1,0 +1,58 @@
+@import "var";
+@import "body";
+@import "header";
+
+
+main{
+    background-color: #122350;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contenido{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        img{
+            max-width: 45%;
+            height: auto;
+        }
+        .textoPrincipal{
+            max-width: 50%;
+            text-align: left;
+            padding: 20px;
+            color: #FFFFFF;
+            font-family: "Playfair Display", serif
+            h1{
+                font-family: "Playfair Display", serif;
+                color: $blanco;
+                margin: 0;
+                font-size: 40px;  
+            }
+        }
+    }
+    .main__quienesSomos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        img{
+            max-width: 100%;
+            height: auto;
+            width: 50%;
+            padding: 3%;
+        }
+        .main__text{
+            h2{
+                color: $dorado;
+                text-align: center;
+            }
+            p{
+                color: #FFFFFF;
+                max-width: 100%;
+                text-align:justify
+            }
+        }
+    }
+}
