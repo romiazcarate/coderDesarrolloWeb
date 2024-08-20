@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0%;
   margin: 0;
@@ -67,11 +68,13 @@ main .contenido .textoPrincipal {
   text-align: left;
   padding: 20px;
   color: #FFFFFF;
-  font-family: "Playfair Display", serif h1;
-  font-family-font-family: "Playfair Display", serif;
-  font-family-color: #FFFFFF;
-  font-family-margin: 0;
-  font-family-font-size: 40px;
+  font-family: "Playfair Display", serif;
+}
+main .contenido .textoPrincipal h1 {
+  font-family: "Playfair Display", serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-size: 40px;
 }
 main .main__quienesSomos {
   display: flex;
@@ -93,6 +96,207 @@ main .main__quienesSomos .main__text p {
   color: #FFFFFF;
   max-width: 100%;
   text-align: justify;
+}
+main .contacto {
+  background-color: #FFFFFF;
+  font-family: "Roboto Slab", serif;
+}
+main .contacto h2 {
+  color: #E9A051;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+main .contacto p {
+  text-align: center;
+}
+main .contacto form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+main .contacto form div {
+  margin-bottom: 15px;
+}
+main .contacto form div label {
+  display: block;
+  margin-bottom: 10px;
+}
+main .contacto form div textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+main .contacto form div button {
+  padding: 10px 35px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .video {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+  column-gap: 20px;
+}
+main .video iframe {
+  border: 5px solid #E9A051;
+}
+
+footer {
+  background-color: #6376a3;
+  padding: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+footer .footer__left, footer .footer__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer__left .redes a img, footer .footer__right .redes a img {
+  width: 35px;
+  height: 35px;
+  margin: 12px;
+}
+footer .footer__bottom {
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+section {
+  background-color: #122350;
+  padding: 20px;
+  font-family: "Roboto Slab", serif;
+}
+section .especialidadesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+section .especialidadesContainer .especialidadesAreas {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #E9A051;
+  height: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  color: #FFFFFF;
+  background-color: #122350;
+}
+section .especialidadesContainer img {
+  max-width: 70px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+section .especialidadesContainer div ul {
+  padding-left: 20px;
+  list-style-position: inside;
+  width: 100%;
+}
+
+.main__carousel .carousel-inner .carousel-item active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px; /* Ajusta según sea necesario */
+}
+.main__carousel .carousel-inner .carousel-item active img {
+  max-width: 100%;
+  height: auto;
+}
+.main__carousel .carousel-inner .carousel-item active .row {
+  width: 150%;
+}
+.main__carousel .carousel-inner .carousel-item active .carousel-caption {
+  text-align: center;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+  width: 70%;
+}
+.main__carousel .carousel-inner .carousel-item active .carousel-caption h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.main__carousel .carousel-inner .carousel-item active .carousel-caption p {
+  font-size: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: start; /* Alineamos los items a la izuiqeda */
+  }
+  .video {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    grid-template-columns: 1fr;
+  }
+  .footer__bottom {
+    grid-column: 1;
+  }
+  /* Le añadimos un div al logo para poder centrarlo cuando esta responsive */
+  .container-logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Alineamos el header en colum y ajustamos los item a la izuiqeda */
+  .header {
+    flex-direction: column;
+    align-items: start;
+  }
+  .video iframe {
+    width: 100%;
+  }
+  .footer__right iframe {
+    width: 100%;
+  }
+  /* Carousel mobile */
+  .carousel-caption p {
+    display: none;
+  }
+  /* Ajustes para especialidadesContainer */
+  .especialidadesContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .especialidadesAreas {
+    width: 100%; /* Asegura que cada especialidad ocupe todo el ancho disponible */
+    margin-bottom: 20px; /* Espaciado entre los recuadros */
+  }
+}
+@media (max-width: 576px) {
+  .contenido {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
