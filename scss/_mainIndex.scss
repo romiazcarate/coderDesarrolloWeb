@@ -1,0 +1,27 @@
+.main__index{
+    @include centered-container();
+    
+    .contenido{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        img{
+            max-width: 45%;
+            height: auto;
+        }
+        .textoPrincipal{
+            max-width: 50%;
+            text-align: left;
+            padding: 20px;
+            color: $blanco;
+            font-family: $playfair;
+            h1{
+                font-family: $playfair;
+                color: $blanco;
+                margin: 0;
+                font-size: 40px;  
+            }
+        }
+    }
+}

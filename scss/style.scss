@@ -1,103 +1,13 @@
 @import "var";
 @import "body";
 @import "header";
+@import "mixins";
+@import "mainIndex";
+@import "mainQuienesSomos";
+@import "mainContacto";
 
-
-main{
-    background-color: #122350;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .contenido{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        img{
-            max-width: 45%;
-            height: auto;
-        }
-        .textoPrincipal{
-            max-width: 50%;
-            text-align: left;
-            padding: 20px;
-            color: $blanco;
-            font-family: $playfair;
-            h1{
-                font-family: $playfair;
-                color: $blanco;
-                margin: 0;
-                font-size: 40px;  
-            }
-        }
-    }
-    .main__quienesSomos{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        img{
-            max-width: 100%;
-            height: auto;
-            width: 50%;
-            padding: 3%;
-        }
-        .main__text{
-            h2{
-                color: $dorado;
-                text-align: center;
-            }
-            p{
-                color: #FFFFFF;
-                max-width: 100%;
-                text-align:justify
-            }
-        }
-    }
-    .contacto{
-        background-color: $blanco;
-        font-family: $roboto;
-        
-        h2{
-            color: $dorado;
-            text-align: center;
-            font-family: $playfair;
-        }
-        p{
-            text-align: center;
-        }
-        form{
-            max-width: 600px;
-            margin: 30px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: $blanco;
-            div{
-                margin-bottom: 15px;
-                label{
-                    display: block;
-                    margin-bottom: 10px;
-                }
-                textarea{
-                    width: calc(100% - 22px);
-                    padding: 10px;
-                    border: 1px solid #ccc;
-                    border-radius: 5px;
-                    font-size: 1em;
-                }
-                button{
-                    padding: 10px 35px;
-                    background-color: #333;
-                    color: white;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
+.main__casos{
+    @include centered-container();
     .video{
         display: grid;
         padding: 20px;
@@ -109,7 +19,7 @@ main{
         }
     }
 }
-
+    
 footer{
     background-color: #6376a3;
     padding: 20px;
@@ -185,6 +95,7 @@ section{
 }
 
 .main__carousel{
+    @include centered-container();
     .carousel-inner{
         .carousel-item active{
             display: flex;
@@ -265,11 +176,42 @@ section{
     .especialidadesContainer {
         display: flex;
         flex-direction: column; 
+        padding: 0 10px;
     }
 
     .especialidadesAreas {
         width: 100%; /* Asegura que cada especialidad ocupe todo el ancho disponible */
         margin-bottom: 20px; /* Espaciado entre los recuadros */
+        padding: 10px;
+    }
+
+    .especialidadesImage {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .main__quienesSomos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        img {
+            order: 1; /* Imagen primero */
+            width: 100%;
+        }
+        .main__text {
+            order: 2; /* Contenedor del h2 y el párrafo */
+            
+            h2 {
+                order: 1; /* h2 primero */
+            }
+
+            p {
+                order: 2; /* Párrafo segundo */
+            }
+        }
+
     }
 }
 

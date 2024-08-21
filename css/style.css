@@ -46,70 +46,81 @@ body {
   color: #0f0f0f;
 }
 
-main {
+.main__index {
   background-color: #122350;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .contenido {
+.main__index .contenido {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
-main .contenido img {
+.main__index .contenido img {
   max-width: 45%;
   height: auto;
 }
-main .contenido .textoPrincipal {
+.main__index .contenido .textoPrincipal {
   max-width: 50%;
   text-align: left;
   padding: 20px;
   color: #FFFFFF;
   font-family: "Playfair Display", serif;
 }
-main .contenido .textoPrincipal h1 {
+.main__index .contenido .textoPrincipal h1 {
   font-family: "Playfair Display", serif;
   color: #FFFFFF;
   margin: 0;
   font-size: 40px;
 }
-main .main__quienesSomos {
+
+.main__quienesSomos {
+  background-color: #122350;
+  padding: 20px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  flex-direction: column;
 }
-main .main__quienesSomos img {
+.main__quienesSomos img {
   max-width: 100%;
   height: auto;
-  width: 50%;
+  width: 60%;
   padding: 3%;
 }
-main .main__quienesSomos .main__text h2 {
-  color: #E9A051;
+.main__quienesSomos .main__text {
+  width: 80%; /* Ajusta el ancho del texto */
+  margin-top: 20px; /* Añade espacio entre la imagen y el texto */
   text-align: center;
 }
-main .main__quienesSomos .main__text p {
+.main__quienesSomos .main__text h2 {
+  color: #E9A051;
+  text-align: center;
+  font-size: 2rem;
+}
+.main__quienesSomos .main__text p {
   color: #FFFFFF;
   max-width: 100%;
-  text-align: justify;
+  text-align: center;
+  font-size: 130%;
 }
-main .contacto {
+
+.contacto {
   background-color: #FFFFFF;
   font-family: "Roboto Slab", serif;
 }
-main .contacto h2 {
+.contacto h2 {
   color: #E9A051;
   text-align: center;
   font-family: "Playfair Display", serif;
 }
-main .contacto p {
+.contacto p {
   text-align: center;
 }
-main .contacto form {
+.contacto form {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
@@ -117,21 +128,21 @@ main .contacto form {
   border-radius: 10px;
   background-color: #FFFFFF;
 }
-main .contacto form div {
+.contacto form div {
   margin-bottom: 15px;
 }
-main .contacto form div label {
+.contacto form div label {
   display: block;
   margin-bottom: 10px;
 }
-main .contacto form div textarea {
+.contacto form div textarea {
   width: calc(100% - 22px);
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1em;
 }
-main .contacto form div button {
+.contacto form div button {
   padding: 10px 35px;
   background-color: #333;
   color: white;
@@ -139,14 +150,22 @@ main .contacto form div button {
   border-radius: 5px;
   cursor: pointer;
 }
-main .video {
+
+.main__casos {
+  background-color: #122350;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__casos .video {
   display: grid;
   padding: 20px;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 30px;
   column-gap: 20px;
 }
-main .video iframe {
+.main__casos .video iframe {
   border: 5px solid #E9A051;
 }
 
@@ -215,6 +234,13 @@ section .especialidadesContainer div ul {
   width: 100%;
 }
 
+.main__carousel {
+  background-color: #122350;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .main__carousel .carousel-inner .carousel-item active {
   display: flex;
   align-items: center;
@@ -287,10 +313,35 @@ section .especialidadesContainer div ul {
   .especialidadesContainer {
     display: flex;
     flex-direction: column;
+    padding: 0 10px;
   }
   .especialidadesAreas {
     width: 100%; /* Asegura que cada especialidad ocupe todo el ancho disponible */
     margin-bottom: 20px; /* Espaciado entre los recuadros */
+    padding: 10px;
+  }
+  .especialidadesImage {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  .main__quienesSomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .main__quienesSomos img {
+    order: 1; /* Imagen primero */
+    width: 100%;
+  }
+  .main__quienesSomos .main__text {
+    order: 2; /* Contenedor del h2 y el párrafo */
+  }
+  .main__quienesSomos .main__text h2 {
+    order: 1; /* h2 primero */
+  }
+  .main__quienesSomos .main__text p {
+    order: 2; /* Párrafo segundo */
   }
 }
 @media (max-width: 576px) {
