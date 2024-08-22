@@ -16,8 +16,8 @@ body {
   background-color: #6376a3;
   padding: 15px;
 }
-.header .logo {
-  max-width: 150px;
+.header img {
+  max-width: 200px;
 }
 .header .header__nav {
   flex-grow: 1;
@@ -46,6 +46,34 @@ body {
   color: #0f0f0f;
 }
 
+footer {
+  background-color: #6376a3;
+  padding: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+footer .footer__left, footer .footer__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer__left .redes a img, footer .footer__right .redes a img {
+  width: 35px;
+  height: 35px;
+  margin: 12px;
+}
+footer .footer__bottom {
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
 .main__index {
   background-color: #122350;
   padding: 20px;
@@ -55,26 +83,34 @@ body {
 }
 .main__index .contenido {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
 }
-.main__index .contenido img {
-  max-width: 45%;
-  height: auto;
-}
 .main__index .contenido .textoPrincipal {
-  max-width: 50%;
-  text-align: left;
+  max-width: 70%;
+  text-align: center;
   padding: 20px;
   color: #FFFFFF;
   font-family: "Playfair Display", serif;
 }
 .main__index .contenido .textoPrincipal h1 {
   font-family: "Playfair Display", serif;
-  color: #FFFFFF;
+  color: #E9A051;
+  margin: 20px 0;
+  font-size: 70px;
+  text-align: center;
+}
+.main__index .contenido .textoPrincipal p {
+  font-size: 20px;
+  line-height: 1.6;
   margin: 0;
-  font-size: 40px;
+  text-align: center;
+}
+.main__index .contenido img {
+  max-width: 70%;
+  height: auto;
+  margin-top: 20px;
 }
 
 .main__quienesSomos {
@@ -145,10 +181,46 @@ body {
 .contacto form div button {
   padding: 10px 35px;
   background-color: #333;
-  color: white;
+  color: #FFFFFF;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.main__carousel {
+  background-color: #122350;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__carousel .carousel-inner .carousel-item.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px; /* Ajusta según sea necesario */
+}
+.main__carousel .carousel-inner .carousel-item.active img {
+  max-width: 100%;
+  height: auto;
+}
+.main__carousel .carousel-inner .carousel-item.active .row {
+  width: 150%;
+}
+.main__carousel .carousel-inner .carousel-item.active .carousel-caption {
+  text-align: center;
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+  width: 70%;
+}
+.main__carousel .carousel-inner .carousel-item.active .carousel-caption h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.main__carousel .carousel-inner .carousel-item.active .carousel-caption p {
+  font-size: 15px;
 }
 
 .main__casos {
@@ -167,34 +239,6 @@ body {
 }
 .main__casos .video iframe {
   border: 5px solid #E9A051;
-}
-
-footer {
-  background-color: #6376a3;
-  padding: 20px;
-  text-align: center;
-  color: #FFFFFF;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  align-items: center;
-  font-weight: bold;
-}
-footer .footer__left, footer .footer__right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-footer .footer__left .redes a img, footer .footer__right .redes a img {
-  width: 35px;
-  height: 35px;
-  margin: 12px;
-}
-footer .footer__bottom {
-  grid-column: span 2;
-  text-align: center;
-  margin-top: 10px;
-  font-weight: normal;
 }
 
 section {
@@ -234,95 +278,129 @@ section .especialidadesContainer div ul {
   width: 100%;
 }
 
-.main__carousel {
-  background-color: #122350;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main__carousel .carousel-inner .carousel-item active {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100px; /* Ajusta según sea necesario */
-}
-.main__carousel .carousel-inner .carousel-item active img {
-  max-width: 100%;
-  height: auto;
-}
-.main__carousel .carousel-inner .carousel-item active .row {
-  width: 150%;
-}
-.main__carousel .carousel-inner .carousel-item active .carousel-caption {
-  text-align: center;
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 5px;
-  width: 70%;
-}
-.main__carousel .carousel-inner .carousel-item active .carousel-caption h5 {
-  font-size: 20px;
-  font-weight: bold;
-}
-.main__carousel .carousel-inner .carousel-item active .carousel-caption p {
-  font-size: 15px;
-}
-
 /* Media Queries */
 @media (max-width: 768px) {
-  nav ul {
+  /* Header */
+  .header {
     flex-direction: column;
-    gap: 10px;
-    align-items: start; /* Alineamos los items a la izuiqeda */
+    align-items: start;
   }
-  .video {
-    grid-template-columns: 1fr;
-  }
-  footer {
-    grid-template-columns: 1fr;
-  }
-  .footer__bottom {
-    grid-column: 1;
-  }
-  /* Le añadimos un div al logo para poder centrarlo cuando esta responsive */
-  .container-logo {
+  .header .container-logo {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  /* Alineamos el header en colum y ajustamos los item a la izuiqeda */
-  .header {
+  .header .header__nav ul {
     flex-direction: column;
-    align-items: start;
+    gap: 10px;
+    align-items: start; /* Alineamos los items a la izuiqeda */
   }
-  .video iframe {
+  /* Footer */
+  footer {
+    grid-template-columns: 1fr;
+  }
+  footer .footer__right iframe {
     width: 100%;
   }
-  .footer__right iframe {
+  footer .footer__bottom {
+    grid-column: 1;
+  }
+  .main__index .contenido {
+    flex-direction: column;
+    align-items: center;
     width: 100%;
   }
-  /* Carousel mobile */
-  .carousel-caption p {
-    display: none;
+  .main__index .contenido .textoPrincipal {
+    max-width: 90%;
+    padding: 10px;
+    text-align: left;
   }
-  /* Ajustes para especialidadesContainer */
-  .especialidadesContainer {
+  .main__index .contenido .textoPrincipal h1 {
+    font-size: 40px;
+    margin: 10px 0;
+  }
+  .main__index .contenido .textoPrincipal p {
+    font-size: 16px;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+  }
+  .main__index .contenido img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .main__casos .video {
+    grid-template-columns: 1fr;
+  }
+  .main__casos .video iframe {
+    width: 100%;
+  }
+  .contacto {
+    padding: 20px;
+  }
+  .contacto h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .contacto p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  .contacto form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .contacto form div label {
+    font-size: 16px;
+  }
+  .contacto form div input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .contacto form div textarea {
+    resize: vertical;
+  }
+  .contacto form div button {
+    align-self: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  section .especialidadesContainer {
     display: flex;
     flex-direction: column;
     padding: 0 10px;
   }
-  .especialidadesAreas {
+  section .especialidadesContainer .especialidadesAreas {
     width: 100%; /* Asegura que cada especialidad ocupe todo el ancho disponible */
     margin-bottom: 20px; /* Espaciado entre los recuadros */
     padding: 10px;
   }
-  .especialidadesImage {
+  section .especialidadesContainer .especialidadesAreas .especialidadesImage {
     width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
+  }
+  /* Carousel mobile */
+  .main__carousel .carousel-inner .carousel-item .carousel-caption p {
+    display: none;
   }
   .main__quienesSomos {
     display: flex;

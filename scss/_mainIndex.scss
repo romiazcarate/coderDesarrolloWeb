@@ -3,25 +3,38 @@
     
     .contenido{
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
         width: 100%;
-        img{
-            max-width: 45%;
-            height: auto;
-        }
+
         .textoPrincipal{
-            max-width: 50%;
-            text-align: left;
+            max-width: 70%;
+            text-align: center;
             padding: 20px;
             color: $blanco;
             font-family: $playfair;
+
             h1{
                 font-family: $playfair;
-                color: $blanco;
-                margin: 0;
-                font-size: 40px;  
+                color: $dorado;
+                margin: 20px 0;;
+                font-size: 70px;  
+                text-align: center;
+            }
+
+            p {
+                font-size: 20px; 
+                line-height: 1.6; 
+                margin: 0; 
+                text-align: center;
             }
         }
+
+        img{
+            max-width: 70%;
+            height: auto;
+            margin-top: 20px;
+        }
+        
     }
 }

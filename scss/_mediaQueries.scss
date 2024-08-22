@@ -1,0 +1,196 @@
+/* Media Queries */
+@media (max-width: 768px) {
+
+    /* Header */
+    .header{
+        flex-direction: column;
+        align-items: start;
+        .container-logo{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .header__nav{
+            ul{
+                flex-direction: column;
+                gap: 10px;
+                align-items: start; /* Alineamos los items a la izuiqeda */       
+            }
+        }
+    }
+
+    /* Footer */
+    footer {
+        grid-template-columns: 1fr;
+        .footer__right{
+            iframe{
+                width:100%;
+            }
+        }
+        .footer__bottom{
+            grid-column: 1;
+        }
+    }
+
+    .main__index {
+        .contenido {
+            flex-direction: column; 
+            align-items: center; 
+            width: 100%; 
+
+            .textoPrincipal {
+                max-width: 90%; 
+                padding: 10px; 
+                text-align: left; 
+                h1 {
+                    font-size: 40px; 
+                    margin: 10px 0; 
+                }
+                p {
+                    font-size: 16px; 
+                    margin: 0; 
+                    text-align: left; 
+                    width: 100%; 
+                }
+            }
+
+            img {
+                max-width: 100%; // Aumenta el ancho máximo de la imagen
+                height: auto; // Mantiene la proporción de la imagen
+                margin-top: 20px; // Mantiene el margen superior
+            }
+        }
+    }
+
+    .main__casos{
+        .video {
+            grid-template-columns: 1fr;
+            iframe{
+                width: 100%;
+            }
+        }
+    }
+
+    .contacto{
+        padding: 20px; 
+
+        h2 {
+            font-size: 24px; 
+            text-align: center; 
+        }
+
+        p {
+            font-size: 16px; 
+            text-align: center; 
+            margin-bottom: 20px; 
+        }
+
+        form {
+            display: flex;
+            flex-direction: column; 
+            gap: 15px; 
+            width: 100%; 
+
+            div {
+                display: flex;
+                flex-direction: column; 
+                gap: 5px; 
+                label {
+                    font-size: 16px; 
+                }
+
+                input {
+                    width: 100%; // Asegura que los campos de entrada ocupen todo el ancho disponible
+                    padding: 10px; // Añade espacio interno en los campos
+                    font-size: 16px; // Ajusta el tamaño de la fuente en los campos
+                    border: 1px solid #ccc; // Añade un borde suave a los campos
+                    border-radius: 4px; // Redondea los bordes de los campos
+                }
+
+                textarea {
+                    resize: vertical; // Permite redimensionar el área de texto verticalmente
+                }
+
+                button {
+                    align-self: center; 
+                    padding: 10px 20px; 
+                    font-size: 16px; 
+                    background-color: #333; 
+                    color: $blanco; 
+                    border: none; 
+                    border-radius: 4px; 
+                    cursor: pointer; 
+                }
+            }
+        }
+    }
+    
+    section{
+        .especialidadesContainer {
+            display: flex;
+            flex-direction: column; 
+            padding: 0 10px;
+            .especialidadesAreas {
+                width: 100%; /* Asegura que cada especialidad ocupe todo el ancho disponible */
+                margin-bottom: 20px; /* Espaciado entre los recuadros */
+                padding: 10px;
+                .especialidadesImage {
+                    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+                    height: auto; /* Mantiene la proporción de la imagen */
+                }
+            }
+        }
+    }
+
+    
+   
+
+
+
+     /* Carousel mobile */
+     .main__carousel{
+        .carousel-inner{
+            .carousel-item{
+                .carousel-caption{
+                    p{
+                        display: none;
+                    }
+                }  
+            }
+        }
+     }
+
+
+    .main__quienesSomos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        img {
+            order: 1; /* Imagen primero */
+            width: 100%;
+        }
+        .main__text {
+            order: 2; /* Contenedor del h2 y el párrafo */
+            
+            h2 {
+                order: 1; /* h2 primero */
+            }
+
+            p {
+                order: 2; /* Párrafo segundo */
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 576px) {
+   .contenido{
+    flex-direction: column;
+    }
+}
