@@ -1,40 +1,44 @@
-.main__index{
+.main__index {
     @include centered-container();
-    
-    .contenido{
+
+    .contenido {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
+        position: relative;
 
-        .textoPrincipal{
+        h1 {
+            font-size: 70px;
+            color: $dorado;
+            font-family: $playfair;
+            margin-bottom: 20px; 
+            text-align: center;
+        }
+
+        img {
+            width: 120%;
+            max-width: none;
+            height: auto;
+            max-height: 60vh; // Mantiene el máximo pero permite ver toda la imagen
+            object-fit: cover; // Cambiamos a 'contain' para que la imagen no se recorte
+            margin: 0;
+        }
+
+        .textoPrincipal {
             max-width: 70%;
             text-align: center;
             padding: 20px;
             color: $blanco;
-            font-family: $playfair;
-
-            h1{
-                font-family: $playfair;
-                color: $dorado;
-                margin: 20px 0;;
-                font-size: 70px;  
-                text-align: center;
-            }
+            font-family: $roboto;
 
             p {
-                font-size: 20px; 
-                line-height: 1.6; 
-                margin: 0; 
+                font-size: 20px;
+                line-height: 1.6;
+                margin: 0;
                 text-align: center;
             }
         }
-
-        img{
-            max-width: 70%;
-            height: auto;
-            margin-top: 20px;
-        }
-        
     }
 }
+

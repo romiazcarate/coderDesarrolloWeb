@@ -1,5 +1,5 @@
 section{
-    background-color: #122350;
+    background-color: $lila;
     padding: 20px;
     font-family: $roboto;
     .especialidadesContainer{
@@ -19,7 +19,7 @@ section{
             justify-content: space-between;
             padding: 20px;
             color: $blanco;
-            background-color: #122350;
+            background-color: $lila;
         }
         img{
             max-width: 70px; 

@@ -1,0 +1,46 @@
+.main__equipo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    background-color: $lila;
+
+    .equipo-item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        max-width: 100%; // Asegura que no se expanda más allá del viewport
+
+
+        .equipo-img {
+            flex: 1;
+            min-width: 250px;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .equipo-texto {
+            flex: 2;
+            h3 {
+                font-size: 50px;
+                color:$dorado;
+                margin-bottom: 10px;
+                text-align: center;
+                font-family: $playfair;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 1.5;
+                color: $blanco;
+                text-align: justify;
+            }
+        }
+    }
+}

@@ -1,41 +1,88 @@
-.contacto{
-    background-color: $blanco;
-    font-family: $roboto;
-    h2{
-        color: $dorado;
-        text-align: center;
-        font-family: $playfair;
+.contactoSection{
+    height: 35vh;
+    position: relative;
+    width: 100%;
+    background-color: #6376a3;
+    img{
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
     }
+
+    .contactoTitulo{
+        bottom: 0;
+        color: $blanco;
+        font-size: 2.75rem;
+        font-weight: 700;
+        left: 0;
+        letter-spacing: .15rem;
+        line-height: 1.5;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        text-transform: uppercase;
+        top: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        z-index: 1; // Asegura que el título esté sobre la imagen
+        font-family: $roboto;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);    
+    }
+}
+
+
+
+.contacto{
+    background-color: $lila;
+    font-family: $roboto;
+
     p{
         text-align: center;
+        color: $blanco; // Asegúrate de definir $blanco en tu SASS
+        font-size: 1.2em; // Ajusta el tamaño del p aquí
     }
     form{
         max-width: 600px;
-        margin: 30px auto;
+        margin: 0 auto;
         padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        background-color: $blanco;
+        background-color: $lila;
+
         div{
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+
             label{
                 display: block;
                 margin-bottom: 10px;
+                font-size: 1.3rem; // Ajusta el tamaño de la fuente de las etiquetas si es necesario
+                color: $blanco;
             }
+
             textarea{
-                width: calc(100% - 22px);
+                width: 100%;
                 padding: 10px;
                 border: 1px solid #ccc;
                 border-radius: 5px;
                 font-size: 1em;
+                font-family: $roboto; 
             }
+            input{
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 1em;
+                font-family: $roboto; 
+            }
+
             button{
                 padding: 10px 35px;
                 background-color: #333;
                 color: $blanco;
-                border: none;
-                border-radius: 5px;
+                
                 cursor: pointer;
+                font-size: 1em; // Tamaño del texto del botón
             }
         }
     }

@@ -7,6 +7,7 @@
 
 body {
   font-family: "Roboto Slab", serif;
+  overflow-x: hidden;
 }
 
 .header {
@@ -47,7 +48,7 @@ body {
 }
 
 footer {
-  background-color: #6376a3;
+  background-color: #16316e;
   padding: 20px;
   text-align: center;
   color: #FFFFFF;
@@ -75,7 +76,7 @@ footer .footer__bottom {
 }
 
 .main__index {
-  background-color: #122350;
+  background-color: #6376a3;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -86,20 +87,29 @@ footer .footer__bottom {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  position: relative;
+}
+.main__index .contenido h1 {
+  font-size: 70px;
+  color: #E9A051;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main__index .contenido img {
+  width: 120%;
+  max-width: none;
+  height: auto;
+  max-height: 60vh;
+  object-fit: cover;
+  margin: 0;
 }
 .main__index .contenido .textoPrincipal {
   max-width: 70%;
   text-align: center;
   padding: 20px;
   color: #FFFFFF;
-  font-family: "Playfair Display", serif;
-}
-.main__index .contenido .textoPrincipal h1 {
-  font-family: "Playfair Display", serif;
-  color: #E9A051;
-  margin: 20px 0;
-  font-size: 70px;
-  text-align: center;
+  font-family: "Roboto Slab", serif;
 }
 .main__index .contenido .textoPrincipal p {
   font-size: 20px;
@@ -107,128 +117,231 @@ footer .footer__bottom {
   margin: 0;
   text-align: center;
 }
-.main__index .contenido img {
-  max-width: 70%;
-  height: auto;
-  margin-top: 20px;
+
+.preguntasSection {
+  height: 35vh;
+  position: relative;
+  width: 100%;
+  background-color: #6376a3;
+}
+.preguntasSection img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.preguntasSection .preguntasTitulo {
+  bottom: 0;
+  color: #FFFFFF;
+  font-size: 2.75rem;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0.15rem;
+  line-height: 1.5;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  z-index: 1;
+  font-family: "Roboto Slab", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-.main__quienesSomos {
-  background-color: #122350;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.accordion {
+  margin: 20px auto;
+  max-width: 90%;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-.main__quienesSomos img {
-  max-width: 100%;
-  height: auto;
-  width: 60%;
-  padding: 3%;
+
+.accordion-item {
+  background-color: #f0f0f0;
+  border: none;
 }
-.main__quienesSomos .main__text {
-  width: 80%; /* Ajusta el ancho del texto */
-  margin-top: 20px; /* Añade espacio entre la imagen y el texto */
-  text-align: center;
+
+.accordion-button {
+  background-color: #e9e9e9;
+  color: #333;
+  border: none;
 }
-.main__quienesSomos .main__text h2 {
-  color: #E9A051;
-  text-align: center;
-  font-size: 2rem;
+
+.accordion-body {
+  background-color: #f0f0f0;
+  color: #333;
 }
-.main__quienesSomos .main__text p {
+
+.contactoSection {
+  height: 35vh;
+  position: relative;
+  width: 100%;
+  background-color: #6376a3;
+}
+.contactoSection img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.contactoSection .contactoTitulo {
+  bottom: 0;
   color: #FFFFFF;
-  max-width: 100%;
+  font-size: 2.75rem;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0.15rem;
+  line-height: 1.5;
+  margin: auto;
+  position: absolute;
+  right: 0;
   text-align: center;
-  font-size: 130%;
+  text-transform: uppercase;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  z-index: 1;
+  font-family: "Roboto Slab", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .contacto {
-  background-color: #FFFFFF;
+  background-color: #6376a3;
   font-family: "Roboto Slab", serif;
-}
-.contacto h2 {
-  color: #E9A051;
-  text-align: center;
-  font-family: "Playfair Display", serif;
 }
 .contacto p {
   text-align: center;
+  color: #FFFFFF;
+  font-size: 1.2em;
 }
 .contacto form {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #FFFFFF;
+  background-color: #6376a3;
 }
 .contacto form div {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .contacto form div label {
   display: block;
   margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #FFFFFF;
 }
 .contacto form div textarea {
-  width: calc(100% - 22px);
+  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1em;
+  font-family: "Roboto Slab", serif;
+}
+.contacto form div input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: "Roboto Slab", serif;
 }
 .contacto form div button {
   padding: 10px 35px;
   background-color: #333;
   color: #FFFFFF;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
+  font-size: 1em;
 }
 
-.main__carousel {
-  background-color: #122350;
+.main__equipo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #6376a3;
 }
-.main__carousel .carousel-inner .carousel-item.active {
+.main__equipo .equipo-item {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  min-height: 100px; /* Ajusta según sea necesario */
-}
-.main__carousel .carousel-inner .carousel-item.active img {
+  gap: 20px;
   max-width: 100%;
+}
+.main__equipo .equipo-item .equipo-img {
+  flex: 1;
+  min-width: 250px;
+}
+.main__equipo .equipo-item .equipo-img img {
+  width: 100%;
   height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.main__carousel .carousel-inner .carousel-item.active .row {
-  width: 150%;
+.main__equipo .equipo-item .equipo-texto {
+  flex: 2;
 }
-.main__carousel .carousel-inner .carousel-item.active .carousel-caption {
+.main__equipo .equipo-item .equipo-texto h3 {
+  font-size: 50px;
+  color: #E9A051;
+  margin-bottom: 10px;
   text-align: center;
-  color: #FFFFFF;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 5px;
-  width: 70%;
+  font-family: "Playfair Display", serif;
 }
-.main__carousel .carousel-inner .carousel-item.active .carousel-caption h5 {
+.main__equipo .equipo-item .equipo-texto p {
   font-size: 20px;
-  font-weight: bold;
-}
-.main__carousel .carousel-inner .carousel-item.active .carousel-caption p {
-  font-size: 15px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  text-align: justify;
 }
 
 .main__casos {
-  background-color: #122350;
+  background-color: #6376a3;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+.main__casos .areasSection {
+  height: 35vh;
+  position: relative;
+  width: 100%;
+  background-color: #6376a3;
+  margin-bottom: 20px;
+}
+.main__casos .areasSection img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.main__casos .areasSection .areasTitulo {
+  bottom: 0;
+  color: #FFFFFF;
+  font-size: 2.75rem;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0.15rem;
+  line-height: 1.5;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  z-index: 1;
+  font-family: "Roboto Slab", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 .main__casos .video {
   display: grid;
@@ -240,9 +353,20 @@ footer .footer__bottom {
 .main__casos .video iframe {
   border: 5px solid #E9A051;
 }
+.main__casos .areasSection {
+  height: 35vh;
+  position: relative;
+  width: 100%;
+  background-color: #6376a3;
+}
+.main__casos .areasSection img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
 
 section {
-  background-color: #122350;
+  background-color: #6376a3;
   padding: 20px;
   font-family: "Roboto Slab", serif;
 }
@@ -264,7 +388,7 @@ section .especialidadesContainer .especialidadesAreas {
   justify-content: space-between;
   padding: 20px;
   color: #FFFFFF;
-  background-color: #122350;
+  background-color: #6376a3;
 }
 section .especialidadesContainer img {
   max-width: 70px;
