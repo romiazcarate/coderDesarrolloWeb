@@ -10,18 +10,38 @@
 
         h1 {
             font-size: 70px;
-            color: $dorado;
-            font-family: $playfair;
-            margin-bottom: 20px; 
+            color: $blanco;
+            font-family: $roboto;
+            margin: 0;
             text-align: center;
+            z-index: 2;
+            position: absolute; // Coloca el h1 sobre la imagen
+            top: 20%; // Centra el h1 verticalmente
+            left: 40%; // Centra el h1 horizontalmente
+            transform: translate(-50%, -50%); // Ajusta para centrarlo perfectamente
+            padding: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        h5{
+            font-size: 30px;
+            color: $dorado;
+            font-family: $roboto;
+            margin: 0;
+            text-align: center;
+            z-index: 2;
+            position: absolute; // Coloca el h1 sobre la imagen
+            top: 30%; // Centra el h1 verticalmente
+            left: 70%; // Centra el h1 horizontalmente
+            transform: translate(-50%, -50%); // Ajusta para centrarlo perfectamente
+            padding: 10px;
+            text-shadow: 2px 2px 4px rgba(5, 4, 4, 0.6);
         }
 
         img {
-            width: 120%;
-            max-width: none;
-            height: auto;
-            max-height: 60vh; // Mantiene el máximo pero permite ver toda la imagen
-            object-fit: cover; // Cambiamos a 'contain' para que la imagen no se recorte
+            width: 100vw; // Asegura que ocupe todo el ancho de la pantalla
+            height: auto; // Permite que la altura se ajuste proporcionalmente
+            object-fit: cover; // Evita recortes, pero asegurando que se vea bien
+            max-height: 70vh; // Aumenta la altura máxima de la imagen
             margin: 0;
         }
 
