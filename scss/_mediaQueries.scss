@@ -41,7 +41,7 @@
             width: 100%; 
 
             .textoPrincipal {
-                max-width: 90%; 
+                max-width: 80%; 
                 padding: 10px; 
                 text-align: left; 
                 h1 {
@@ -49,7 +49,7 @@
                     margin: 10px 0; 
                 }
                 p {
-                    font-size: 16px; 
+                    font-size: 14px; 
                     margin: 0; 
                     text-align: left; 
                     width: 100%; 
@@ -168,11 +168,11 @@
         }
 
     }
-}
+
 
 // Page Equipo de trabajo //
 
-.sectionEquipo .equipoSection {
+    .sectionEquipo .equipoSection {
     height: auto; // Permite que la sección ajuste su altura según el contenido
     padding: 10px;
 
@@ -180,9 +180,9 @@
       font-size: 1.5rem; // Reduce el tamaño del texto
       top: 10%; // Ajusta la posición para estar mejor en móviles
     }
-  }
+    }
 
-  .main__equipo {
+    .main__equipo {
     gap: 20px;
     padding: 10px;
 
@@ -206,9 +206,9 @@
         }
       }
     }
-  }
+    }
   
-
+}
   
 
 @media (max-width: 576px) {
