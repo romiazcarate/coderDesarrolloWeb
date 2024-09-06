@@ -1,8 +1,11 @@
-.preguntasSection{
+.mainPreguntas{
+
+    background-color: $lila;
+
+    .preguntasSection{
         height: 35vh;
         position: relative;
         width: 100%;
-        background-color: #6376a3;
     
         img{
             height: 100%;
@@ -38,10 +41,11 @@
         margin: 20px auto; // Centra el acordeón horizontalmente
         max-width: 90%; // Ajusta este valor para hacerlo más ancho; prueba con 90%, 95% o el valor que mejor se vea
         background-color: #f0f0f0;
-        border: 1px solid #ddd;
+        border: 1px solid #c5c1c1;
         border-radius: 8px;
         padding: 10px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // Añade una sombra suave para mejor visualización
+        font-family: $roboto;
     }
     
     .accordion-item {
@@ -59,4 +63,7 @@
     .accordion-body {
         background-color: #f0f0f0;
         color: #333;
+        font-family: $roboto;
     }
+}
+

@@ -138,18 +138,20 @@ footer .footer__bottom {
   text-align: center;
 }
 
-.preguntasSection {
+.mainPreguntas {
+  background-color: #6376a3;
+}
+.mainPreguntas .preguntasSection {
   height: 35vh;
   position: relative;
   width: 100%;
-  background-color: #6376a3;
 }
-.preguntasSection img {
+.mainPreguntas .preguntasSection img {
   height: 100%;
   object-fit: cover;
   width: 100%;
 }
-.preguntasSection .preguntasTitulo {
+.mainPreguntas .preguntasSection .preguntasTitulo {
   bottom: 0;
   color: #FFFFFF;
   font-size: 2.75rem;
@@ -170,31 +172,29 @@ footer .footer__bottom {
   font-family: "Roboto Slab", serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
-
-.accordion {
+.mainPreguntas .accordion {
   margin: 20px auto;
   max-width: 90%;
   background-color: #f0f0f0;
-  border: 1px solid #ddd;
+  border: 1px solid #c5c1c1;
   border-radius: 8px;
   padding: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto Slab", serif;
 }
-
-.accordion-item {
+.mainPreguntas .accordion-item {
   background-color: #f0f0f0;
   border: none;
 }
-
-.accordion-button {
+.mainPreguntas .accordion-button {
   background-color: #e9e9e9;
   color: #333;
   border: none;
 }
-
-.accordion-body {
+.mainPreguntas .accordion-body {
   background-color: #f0f0f0;
   color: #333;
+  font-family: "Roboto Slab", serif;
 }
 
 .contactoSection {
