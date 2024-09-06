@@ -145,24 +145,6 @@
     }
 
     
-   
-
-
-
-     /* Carousel mobile */
-     .main__carousel{
-        .carousel-inner{
-            .carousel-item{
-                .carousel-caption{
-                    p{
-                        display: none;
-                    }
-                }  
-            }
-        }
-     }
-
-
     .main__quienesSomos {
         display: flex;
         flex-direction: column;
@@ -188,9 +170,51 @@
     }
 }
 
+// Page Equipo de trabajo //
+
+.sectionEquipo .equipoSection {
+    height: auto; // Permite que la sección ajuste su altura según el contenido
+    padding: 10px;
+
+    .equipoTitulo {
+      font-size: 1.5rem; // Reduce el tamaño del texto
+      top: 10%; // Ajusta la posición para estar mejor en móviles
+    }
+  }
+
+  .main__equipo {
+    gap: 20px;
+    padding: 10px;
+
+    .equipo-item {
+      flex-direction: column; // Coloca la imagen y el texto en columnas en lugar de en fila
+      align-items: flex-start;
+
+      .equipo-img {
+        width: 100%;
+        min-width: auto;
+      }
+
+      .equipo-texto {
+        h3 {
+          font-size: 30px; // Reduce el tamaño del título
+          text-align: left; // Alinea el texto a la izquierda
+        }
+
+        p {
+          font-size: 16px; 
+        }
+      }
+    }
+  }
+  
+
+  
 
 @media (max-width: 576px) {
    .contenido{
     flex-direction: column;
     }
 }
+
+
