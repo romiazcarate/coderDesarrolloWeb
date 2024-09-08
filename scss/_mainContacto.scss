@@ -10,25 +10,7 @@
     }
 
     .contactoTitulo{
-        bottom: 0;
-        color: $blanco;
-        font-size: 2.75rem;
-        font-weight: 700;
-        left: 0;
-        letter-spacing: .15rem;
-        line-height: 1.5;
-        margin: auto;
-        position: absolute;
-        right: 0;
-        text-align: center;
-        text-transform: uppercase;
-        top: 0;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        z-index: 1; // Asegura que el título esté sobre la imagen
-        font-family: $roboto;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);    
+        @include titulo-container(); 
     }
 }
 
