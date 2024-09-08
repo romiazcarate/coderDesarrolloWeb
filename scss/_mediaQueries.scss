@@ -34,35 +34,51 @@
         }
     }
 
+    /* Index */
+
     .main__index {
         .contenido {
-            flex-direction: column; 
-            align-items: center; 
-            width: 100%; 
-
-            .textoPrincipal {
-                max-width: 80%; 
-                padding: 10px; 
-                text-align: left; 
-                h1 {
-                    font-size: 40px; 
-                    margin: 10px 0; 
-                }
-                p {
-                    font-size: 14px; 
-                    margin: 0; 
-                    text-align: left; 
-                    width: 100%; 
-                }
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+    
+          h1 {
+            font-size: 30px; // Ajusta según el tamaño deseado
+            margin: 10px 0;
+            text-align: center; 
+            position:static;
+          }
+    
+          h5 {
+            display: none;
+          }
+    
+          img {
+            width: 100%; // La imagen ocupará todo el ancho de la pantalla
+            height: auto; // Mantiene la proporción de la imagen
+            display: block; // Elimina el espacio inferior indeseado
+            margin-top: 10px; // Añade un margen si es necesario
+          }
+    
+          .textoPrincipal {
+            max-width: 90%;
+            padding: 10px;
+            text-align: left;
+            justify-content: center;
+    
+            p {
+              font-size: 14px;
+              margin: 0;
+              text-align: left;
+              width: 100%;
             }
-
-            img {
-                max-width: 100%; // Aumenta el ancho máximo de la imagen
-                height: auto; // Mantiene la proporción de la imagen
-                margin-top: 20px; // Mantiene el margen superior
-            }
+          }
         }
+      
     }
+      
+    /* Areas Legales*/
 
     .main__casos{
         .video {
@@ -144,26 +160,20 @@
         }
     }
 
-    
-    .main__quienesSomos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    /* Preguntas Frecuentes */
 
-        img {
-            order: 1; /* Imagen primero */
-            width: 100%;
-        }
-        .main__text {
-            order: 2; /* Contenedor del h2 y el párrafo */
-            
-            h2 {
-                order: 1; /* h2 primero */
+    .mainPreguntas {
+        font-size: 20px;
+        .preguntrasSection{
+            img{
+                width: 100%; // La imagen ocupará todo el ancho de la pantalla
+                height: auto; // Mantiene la proporción de la imagen
+                display: block; // Elimina el espacio inferior indeseado
+                margin-top: 10px; // Añade un margen si es necesario
             }
-
-            p {
-                order: 2; /* Párrafo segundo */
+            p{
+                font-size: 1%;
+                color: $dorado;
             }
         }
 

@@ -1,11 +1,16 @@
 .mainPreguntas{
 
     background-color: $lila;
+    margin-bottom: 0; // Asegúrate de que no haya margen inferior en el main
+    padding-bottom: 0; // Asegúrate de que no haya padding inferior en el main
 
     .preguntasSection{
         height: 35vh;
         position: relative;
         width: 100%;
+        margin-bottom: 0; // Ajustar márgenes internos si es necesario
+        padding-bottom: 0;
+
     
         img{
             height: 100%;
@@ -46,6 +51,8 @@
         padding: 10px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // Añade una sombra suave para mejor visualización
         font-family: $roboto;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
     
     .accordion-item {
@@ -67,3 +74,16 @@
     }
 }
 
+.sectionPreguntasContacto{
+    p{
+        font-size: $roboto;
+        color: $dorado;
+        justify-content: center;
+        text-align: center;
+        font-size: 23px;
+        margin-top: 20px;
+        a{
+            color: $blanco;
+        }
+    }
+}

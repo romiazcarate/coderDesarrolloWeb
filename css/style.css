@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-  padding: 0%;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
@@ -140,11 +140,15 @@ footer .footer__bottom {
 
 .mainPreguntas {
   background-color: #6376a3;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .mainPreguntas .preguntasSection {
   height: 35vh;
   position: relative;
   width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .mainPreguntas .preguntasSection img {
   height: 100%;
@@ -181,6 +185,8 @@ footer .footer__bottom {
   padding: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   font-family: "Roboto Slab", serif;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .mainPreguntas .accordion-item {
   background-color: #f0f0f0;
@@ -195,6 +201,18 @@ footer .footer__bottom {
   background-color: #f0f0f0;
   color: #333;
   font-family: "Roboto Slab", serif;
+}
+
+.sectionPreguntasContacto p {
+  font-size: "Roboto Slab", serif;
+  color: #E9A051;
+  justify-content: center;
+  text-align: center;
+  font-size: 23px;
+  margin-top: 20px;
+}
+.sectionPreguntasContacto p a {
+  color: #FFFFFF;
 }
 
 .contactoSection {
@@ -488,19 +506,33 @@ section .especialidadesContainer div ul {
   footer .footer__bottom {
     grid-column: 1;
   }
+  /* Index */
   .main__index .contenido {
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
+  .main__index .contenido h1 {
+    font-size: 30px;
+    margin: 10px 0;
+    text-align: center;
+    position: static;
+  }
+  .main__index .contenido h5 {
+    display: none;
+  }
+  .main__index .contenido img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+  }
   .main__index .contenido .textoPrincipal {
-    max-width: 80%;
+    max-width: 90%;
     padding: 10px;
     text-align: left;
-  }
-  .main__index .contenido .textoPrincipal h1 {
-    font-size: 40px;
-    margin: 10px 0;
+    justify-content: center;
   }
   .main__index .contenido .textoPrincipal p {
     font-size: 14px;
@@ -508,11 +540,7 @@ section .especialidadesContainer div ul {
     text-align: left;
     width: 100%;
   }
-  .main__index .contenido img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
+  /* Areas Legales*/
   .main__casos .video {
     grid-template-columns: 1fr;
   }
@@ -579,24 +607,19 @@ section .especialidadesContainer div ul {
     width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
   }
-  .main__quienesSomos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  /* Preguntas Frecuentes */
+  .mainPreguntas {
+    font-size: 20px;
   }
-  .main__quienesSomos img {
-    order: 1; /* Imagen primero */
+  .mainPreguntas .preguntrasSection img {
     width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
   }
-  .main__quienesSomos .main__text {
-    order: 2; /* Contenedor del h2 y el párrafo */
-  }
-  .main__quienesSomos .main__text h2 {
-    order: 1; /* h2 primero */
-  }
-  .main__quienesSomos .main__text p {
-    order: 2; /* Párrafo segundo */
+  .mainPreguntas .preguntrasSection p {
+    font-size: 1%;
+    color: #E9A051;
   }
   .sectionEquipo .equipoSection {
     height: auto;
