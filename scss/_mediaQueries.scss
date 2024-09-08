@@ -1,6 +1,11 @@
 /* Media Queries */
 @media (max-width: 768px) {
 
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
     /* Header */
     .header{
         flex-direction: column;
@@ -162,34 +167,42 @@
 
     /* Preguntas Frecuentes */
 
-    .mainPreguntas {
-        font-size: 20px;
-        .preguntrasSection{
-            img{
-                width: 100%; // La imagen ocupará todo el ancho de la pantalla
-                height: auto; // Mantiene la proporción de la imagen
-                display: block; // Elimina el espacio inferior indeseado
-                margin-top: 10px; // Añade un margen si es necesario
-            }
-            p{
-                font-size: 1%;
-                color: $dorado;
-            }
+    .preguntasSection{
+        img{
+            width: 100%;
+            height: auto;
         }
+    }
 
+    /* Ajustar el tamaño de texto dentro de .accordion-body en pantallas pequeñas */
+    .accordion-body {
+        font-size: 14px; // Disminuye el tamaño del texto
+        line-height: 1.4; // Ajusta el espacio entre líneas para mayor legibilidad
+        padding: 10px; // Ajusta el padding si es necesario
+    }
+
+    /* Ajustar otros elementos según sea necesario */
+    .accordion-button {
+        font-size: 16px; // Ajustar el tamaño del texto del botón si es necesario
+    }
+
+    .sectionPreguntasContacto{
+        p{
+            font-size: 20px;
+        }
     }
 
 
 // Page Equipo de trabajo //
 
     .sectionEquipo .equipoSection {
-    height: auto; // Permite que la sección ajuste su altura según el contenido
-    padding: 10px;
+        height: auto; // Permite que la sección ajuste su altura según el contenido
+        padding: 10px;
 
-    .equipoTitulo {
-      font-size: 1.5rem; // Reduce el tamaño del texto
-      top: 10%; // Ajusta la posición para estar mejor en móviles
-    }
+        .equipoTitulo {
+            font-size: 1.5rem; // Reduce el tamaño del texto
+            top: 10%; // Ajusta la posición para estar mejor en móviles
+        }
     }
 
     .main__equipo {
@@ -201,8 +214,9 @@
       align-items: flex-start;
 
       .equipo-img {
-        width: 100%;
+        width: 90%;
         min-width: auto;
+        height: auto;
       }
 
       .equipo-texto {

@@ -479,6 +479,11 @@ section .especialidadesContainer div ul {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
   /* Header */
   .header {
     flex-direction: column;
@@ -608,18 +613,22 @@ section .especialidadesContainer div ul {
     height: auto; /* Mantiene la proporción de la imagen */
   }
   /* Preguntas Frecuentes */
-  .mainPreguntas {
-    font-size: 20px;
-  }
-  .mainPreguntas .preguntrasSection img {
+  .preguntasSection img {
     width: 100%;
     height: auto;
-    display: block;
-    margin-top: 10px;
   }
-  .mainPreguntas .preguntrasSection p {
-    font-size: 1%;
-    color: #E9A051;
+  /* Ajustar el tamaño de texto dentro de .accordion-body en pantallas pequeñas */
+  .accordion-body {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 10px;
+  }
+  /* Ajustar otros elementos según sea necesario */
+  .accordion-button {
+    font-size: 16px;
+  }
+  .sectionPreguntasContacto p {
+    font-size: 20px;
   }
   .sectionEquipo .equipoSection {
     height: auto;
@@ -638,8 +647,9 @@ section .especialidadesContainer div ul {
     align-items: flex-start;
   }
   .main__equipo .equipo-item .equipo-img {
-    width: 100%;
+    width: 90%;
     min-width: auto;
+    height: auto;
   }
   .main__equipo .equipo-item .equipo-texto h3 {
     font-size: 30px;
