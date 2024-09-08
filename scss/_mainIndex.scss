@@ -1,64 +1,63 @@
 .main__index {
-    @include centered-container();
+  @include centered-container();
 
-    .contenido {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        position: relative;
+  .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
 
-        h1 {
-            font-size: 70px;
-            color: $blanco;
-            font-family: $roboto;
-            margin: 0;
-            text-align: center;
-            z-index: 2;
-            position: absolute; // Coloca el h1 sobre la imagen
-            top: 20%; // Centra el h1 verticalmente
-            left: 40%; // Centra el h1 horizontalmente
-            transform: translate(-50%, -50%); // Ajusta para centrarlo perfectamente
-            padding: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        }
-        h5{
-            font-size: 30px;
-            color: $dorado;
-            font-family: $roboto;
-            margin: 0;
-            text-align: center;
-            z-index: 2;
-            position: absolute; // Coloca el h1 sobre la imagen
-            top: 30%; // Centra el h1 verticalmente
-            left: 70%; // Centra el h1 horizontalmente
-            transform: translate(-50%, -50%); // Ajusta para centrarlo perfectamente
-            padding: 10px;
-            text-shadow: 2px 2px 4px rgba(5, 4, 4, 0.6);
-        }
-
-        img {
-            width: 100vw; // Asegura que ocupe todo el ancho de la pantalla
-            height: auto; // Permite que la altura se ajuste proporcionalmente
-            object-fit: cover; // Evita recortes, pero asegurando que se vea bien
-            max-height: 70vh; // Aumenta la altura máxima de la imagen
-            margin: 0;
-        }
-
-        .textoPrincipal {
-            max-width: 70%;
-            text-align: center;
-            padding: 20px;
-            color: $blanco;
-            font-family: $roboto;
-
-            p {
-                font-size: 20px;
-                line-height: 1.6;
-                margin: 0;
-                text-align: center;
-            }
-        }
+    h1 {
+      font-size: 70px;
+      color: $blanco;
+      font-family: $roboto;
+      margin: 0;
+      text-align: center;
+      z-index: 2;
+      position: absolute;
+      top: 20%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     }
-}
+    h5 {
+      font-size: 30px;
+      color: $dorado;
+      font-family: $roboto;
+      margin: 0;
+      text-align: center;
+      z-index: 2;
+      position: absolute;
+      top: 30%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      text-shadow: 2px 2px 4px rgba(5, 4, 4, 0.6);
+    }
 
+    img {
+      width: 100vw;
+      height: auto;
+      object-fit: cover; // Evita recortes, pero asegurando que se vea bien
+      max-height: 70vh;
+      margin: 0;
+    }
+
+    .textoPrincipal {
+      max-width: 70%;
+      text-align: center;
+      padding: 20px;
+      color: $blanco;
+      font-family: $roboto;
+
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin: 0;
+        text-align: center;
+      }
+    }
+  }
+}

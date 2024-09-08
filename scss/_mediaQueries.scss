@@ -1,216 +1,222 @@
 /* Media Queries */
 @media (max-width: 768px) {
-
-    body{
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  /* Header */
+  .header {
+    flex-direction: column;
+    align-items: start;
+    .container-logo {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-    /* Header */
-    .header{
+    .header__nav {
+      ul {
         flex-direction: column;
-        align-items: start;
-        .container-logo{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .header__nav{
-            ul{
-                flex-direction: column;
-                gap: 10px;
-                align-items: start; /* Alineamos los items a la izuiqeda */       
-            }
-        }
+        gap: 10px;
+        align-items: start; /* Alineamos los items a la izquierda */
+      }
     }
+  }
 
-    /* Footer */
-    footer {
-        grid-template-columns: 1fr;
-        .footer__right{
-            iframe{
-                width:100%;
-            }
-        }
-        .footer__bottom{
-            grid-column: 1;
-        }
+  /* Footer */
+  footer {
+    grid-template-columns: 1fr;
+    .footer__right {
+      iframe {
+        width: 100%;
+      }
     }
-
-    /* Index */
-
-    .main__index {
-        .contenido {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 100%;
-    
-          h1 {
-            font-size: 30px; // Ajusta según el tamaño deseado
-            margin: 10px 0;
-            text-align: center; 
-            position:static;
-          }
-    
-          h5 {
-            display: none;
-          }
-    
-          img {
-            width: 100%; // La imagen ocupará todo el ancho de la pantalla
-            height: auto; // Mantiene la proporción de la imagen
-            display: block; // Elimina el espacio inferior indeseado
-            margin-top: 10px; // Añade un margen si es necesario
-          }
-    
-          .textoPrincipal {
-            max-width: 90%;
-            padding: 10px;
-            text-align: left;
-            justify-content: center;
-    
-            p {
-              font-size: 14px;
-              margin: 0;
-              text-align: left;
-              width: 100%;
-            }
-          }
-        }
-      
+    .footer__bottom {
+      grid-column: 1;
     }
-      
-    /* Areas Legales*/
+  }
 
-    .main__casos{
-        .video {
-            grid-template-columns: 1fr;
-            iframe{
-                width: 100%;
-            }
-        }
-    }
+  /* Index */
 
-    .contacto{
-        padding: 20px; 
+  .main__index {
+    .contenido {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
 
-        h2 {
-            font-size: 24px; 
-            text-align: center; 
-        }
+      h1 {
+        font-size: 30px;
+        margin: 10px 0;
+        text-align: center;
+        position: static;
+      }
+
+      h5 {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+      }
+
+      .textoPrincipal {
+        max-width: 90%;
+        padding: 10px;
+        text-align: left;
+        justify-content: center;
 
         p {
-            font-size: 16px; 
-            text-align: center; 
-            margin-bottom: 20px; 
+          font-size: 14px;
+          margin: 0;
+          text-align: left;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  /* Areas Legales*/
+
+  .main__casos {
+    .video {
+      grid-template-columns: 1fr;
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+
+  .contacto {
+    padding: 20px;
+
+    h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        label {
+          font-size: 16px;
         }
 
-        form {
-            display: flex;
-            flex-direction: column; 
-            gap: 15px; 
-            width: 100%; 
-
-            div {
-                display: flex;
-                flex-direction: column; 
-                gap: 5px; 
-                label {
-                    font-size: 16px; 
-                }
-
-                input {
-                    width: 100%; // Asegura que los campos de entrada ocupen todo el ancho disponible
-                    padding: 10px; // Añade espacio interno en los campos
-                    font-size: 16px; // Ajusta el tamaño de la fuente en los campos
-                    border: 1px solid #ccc; // Añade un borde suave a los campos
-                    border-radius: 4px; // Redondea los bordes de los campos
-                }
-
-                textarea {
-                    resize: vertical; // Permite redimensionar el área de texto verticalmente
-                }
-
-                button {
-                    align-self: center; 
-                    padding: 10px 20px; 
-                    font-size: 16px; 
-                    background-color: #333; 
-                    color: $blanco; 
-                    border: none; 
-                    border-radius: 4px; 
-                    cursor: pointer; 
-                }
-            }
+        input {
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
         }
-    }
-    
-    section{
-        .especialidadesContainer {
-            display: flex;
-            flex-direction: column; 
-            padding: 0 10px;
-            .especialidadesAreas {
-                width: 100%; /* Asegura que cada especialidad ocupe todo el ancho disponible */
-                margin-bottom: 20px; /* Espaciado entre los recuadros */
-                padding: 10px;
-                .especialidadesImage {
-                    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-                    height: auto; /* Mantiene la proporción de la imagen */
-                }
-            }
+
+        textarea {
+          resize: vertical; // Permite redimensionar el área de texto verticalmente
         }
-    }
 
-    /* Preguntas Frecuentes */
-
-    .preguntasSection{
-        img{
-            width: 100%;
-            height: auto;
+        button {
+          align-self: center;
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: #333;
+          color: $blanco;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
         }
+      }
     }
+  }
 
-    /* Ajustar el tamaño de texto dentro de .accordion-body en pantallas pequeñas */
-    .accordion-body {
-        font-size: 14px; // Disminuye el tamaño del texto
-        line-height: 1.4; // Ajusta el espacio entre líneas para mayor legibilidad
-        padding: 10px; // Ajusta el padding si es necesario
-    }
-
-    /* Ajustar otros elementos según sea necesario */
-    .accordion-button {
-        font-size: 16px; // Ajustar el tamaño del texto del botón si es necesario
-    }
-
-    .sectionPreguntasContacto{
-        p{
-            font-size: 20px;
-        }
-    }
-
-
-// Page Equipo de trabajo //
-
-    .sectionEquipo .equipoSection {
-        height: auto; // Permite que la sección ajuste su altura según el contenido
+  section {
+    .especialidadesContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 0 10px;
+      .especialidadesAreas {
+        width: 100%;
+        margin-bottom: 20px;
         padding: 10px;
-
-        .equipoTitulo {
-            font-size: 1.5rem; // Reduce el tamaño del texto
-            top: 10%; // Ajusta la posición para estar mejor en móviles
+        .especialidadesImage {
+          width: 100%;
+          height: auto;
         }
+      }
     }
+  }
 
-    .main__equipo {
+  /* Preguntas Frecuentes */
+
+  .preguntasSection {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .equipo-img {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .equipo-texto {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .accordion-body {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 10px;
+  }
+
+  .accordion-button {
+    font-size: 16px;
+  }
+
+  .sectionPreguntasContacto {
+    p {
+      font-size: 20px;
+    }
+  }
+
+  // Page Equipo de trabajo //
+
+  .sectionEquipo .equipoSection {
+    height: auto;
+    padding: 10px;
+
+    .equipoTitulo {
+      font-size: 1.5rem;
+      top: 10%; // Ajusta la posición para estar mejor en móviles
+    }
+  }
+
+  .main__equipo {
     gap: 20px;
     padding: 10px;
 
     .equipo-item {
-      flex-direction: column; // Coloca la imagen y el texto en columnas en lugar de en fila
+      flex-direction: column;
       align-items: flex-start;
 
       .equipo-img {
@@ -221,24 +227,20 @@
 
       .equipo-texto {
         h3 {
-          font-size: 30px; // Reduce el tamaño del título
+          font-size: 30px;
           text-align: left; // Alinea el texto a la izquierda
         }
 
         p {
-          font-size: 16px; 
+          font-size: 16px;
         }
       }
     }
-    }
-  
+  }
 }
-  
 
 @media (max-width: 576px) {
-   .contenido{
+  .contenido {
     flex-direction: column;
-    }
+  }
 }
-
-

@@ -1,53 +1,49 @@
-.main__casos{
-    @include centered-container();
-    display: flex;
-    flex-direction: column; // Alinea los elementos en una columna
-    align-items: center; // Centra horizontalmente el contenido
-    padding: 0px; // Agrega un poco de espacio alrededor del contenido
+.main__casos {
+  @include centered-container();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
 
-    .areasSection{
-        height: 35vh;
-        position: relative;
-        width: 100%;
-        background-color: #6376a3;
-        margin-bottom: 20px; // Espacio entre la sección de imagen/texto y los videos
+  .areasSection {
+    height: 35vh;
+    position: relative;
+    width: 100%;
+    background-color: $lila;
+    margin-bottom: 20px;
 
-    
-        img{
-            height: 100%;
-            object-fit: cover;
-            width: 100%;
-        }
-    
-        .areasTitulo{
-            @include titulo-container();
-        }
-    
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
     }
 
-    .video{
-        display: grid;
-        padding: 20px;
-        grid-template-columns:repeat(2, 1fr);
-        row-gap: 30px;
-        column-gap: 20px;
-        iframe{
-            border: 5px solid $dorado;
-        }
+    .areasTitulo {
+      @include titulo-container();
     }
+  }
 
-    .areasSection{
-        height: 35vh;
-        position: relative;
-        width: 100%;
-        background-color: #6376a3;
-    
-        img{
-            height: 100%;
-            object-fit: cover;
-            width: 100%;
-        }
-
-
+  .video {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+    iframe {
+      border: 5px solid $dorado;
     }
+  }
+
+  .areasSection {
+    height: 35vh;
+    position: relative;
+    width: 100%;
+    background-color: $lila;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
 }

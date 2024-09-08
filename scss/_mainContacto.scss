@@ -1,71 +1,69 @@
-.contactoSection{
-    height: 35vh;
-    position: relative;
+.contactoSection {
+  height: 35vh;
+  position: relative;
+  width: 100%;
+  background-color: $lila;
+  img {
+    height: 100%;
+    object-fit: cover;
     width: 100%;
-    background-color: $lila;
-    img{
-        height: 100%;
-        object-fit: cover;
-        width: 100%;
-    }
+  }
 
-    .contactoTitulo{
-        @include titulo-container(); 
-    }
+  .contactoTitulo {
+    @include titulo-container();
+  }
 }
 
+.contacto {
+  background-color: $lila;
+  font-family: $roboto;
 
-
-.contacto{
+  p {
+    text-align: center;
+    color: $blanco;
+    font-size: 1.2em;
+  }
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
     background-color: $lila;
-    font-family: $roboto;
 
-    p{
-        text-align: center;
-        color: $blanco; // Asegúrate de definir $blanco en tu SASS
-        font-size: 1.2em; // Ajusta el tamaño del p aquí
+    div {
+      margin-bottom: 10px;
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+        color: $blanco;
+      }
+
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+        font-family: $roboto;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+        font-family: $roboto;
+      }
+
+      button {
+        padding: 10px 35px;
+        background-color: #333;
+        color: $blanco;
+
+        cursor: pointer;
+        font-size: 1em; // Tamaño del texto del botón
+      }
     }
-    form{
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: $lila;
-
-        div{
-            margin-bottom: 10px;
-
-            label{
-                display: block;
-                margin-bottom: 10px;
-                font-size: 1.3rem; // Ajusta el tamaño de la fuente de las etiquetas si es necesario
-                color: $blanco;
-            }
-
-            textarea{
-                width: 100%;
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                font-size: 1em;
-                font-family: $roboto; 
-            }
-            input{
-                width: 100%;
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                font-size: 1em;
-                font-family: $roboto; 
-            }
-
-            button{
-                padding: 10px 35px;
-                background-color: #333;
-                color: $blanco;
-                
-                cursor: pointer;
-                font-size: 1em; // Tamaño del texto del botón
-            }
-        }
-    }
+  }
 }

@@ -1,71 +1,67 @@
-.mainPreguntas{
+.mainPreguntas {
+  background-color: $lila;
+  margin-bottom: 0;
+  padding-bottom: 0;
 
-    background-color: $lila;
-    margin-bottom: 0; // Asegúrate de que no haya margen inferior en el main
-    padding-bottom: 0; // Asegúrate de que no haya padding inferior en el main
+  .preguntasSection {
+    height: 35vh;
+    position: relative;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
 
-    .preguntasSection{
-        height: 35vh;
-        position: relative;
-        width: 100%;
-        margin-bottom: 0; // Ajustar márgenes internos si es necesario
-        padding-bottom: 0;
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
 
-    
-        img{
-            height: 100%;
-            object-fit: cover;
-            width: 100%;
-        }
-    
-        .preguntasTitulo{
-            @include titulo-container();
-        }
-    
+    .preguntasTitulo {
+      @include titulo-container();
     }
-    
-    .accordion {
-        margin: 20px auto; // Centra el acordeón horizontalmente
-        max-width: 90%; // Ajusta este valor para hacerlo más ancho; prueba con 90%, 95% o el valor que mejor se vea
-        background-color: #f0f0f0;
-        border: 1px solid #c5c1c1;
-        border-radius: 8px;
-        padding: 10px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // Añade una sombra suave para mejor visualización
-        font-family: $roboto;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-    
-    .accordion-item {
-        background-color: #f0f0f0;
-        border: none;
-        
-    }
-    
-    .accordion-button {
-        background-color: #e9e9e9;
-        color: #333;
-        border: none;
-    }
-    
-    .accordion-body {
-        background-color: #f0f0f0;
-        color: #333;
-        font-family: $roboto;
-    }
+  }
+
+  .accordion {
+    margin: 20px auto;
+    max-width: 90%;
+    background-color: #f0f0f0;
+    border: 1px solid #c5c1c1;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: $roboto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .accordion-item {
+    background-color: #f0f0f0;
+    border: none;
+  }
+
+  .accordion-button {
+    background-color: #e9e9e9;
+    color: #333;
+    border: none;
+  }
+
+  .accordion-body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: $roboto;
+  }
 }
 
-.sectionPreguntasContacto{
-    p{
-        font-size: $roboto;
-        color: $dorado;
-        justify-content: center;
-        text-align: center;
-        font-size: 23px;
-        margin-top: 20px;
-        a{
-            color: $blanco;
-        }
+.sectionPreguntasContacto {
+  p {
+    font-size: $roboto;
+    color: $dorado;
+    justify-content: center;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 20px;
+    a {
+      color: $blanco;
     }
+  }
 }
